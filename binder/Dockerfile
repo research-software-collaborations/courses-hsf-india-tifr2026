@@ -91,8 +91,8 @@ WORKDIR ${HOME}
 RUN rm -rf NSBI-workflow-tutorial
 
 RUN rm -rf .pixi/envs && \ 
-    CONDA_OVERRIDE_CUDA=12.5 pixi clean && \
-    CONDA_OVERRIDE_CUDA=12.5 pixi install -e ${PIXI_ENV} --manifest-path pixi.toml
+    CONDA_OVERRIDE_CUDA=13.2 pixi clean && \
+    CONDA_OVERRIDE_CUDA=13.2 pixi install -e ${PIXI_ENV} --manifest-path pixi.toml
 
 
 ENTRYPOINT ["/usr/local/share/docker-entrypoint.sh"]
