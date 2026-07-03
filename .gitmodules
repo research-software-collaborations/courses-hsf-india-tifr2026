@@ -1,0 +1,4 @@
+[submodule "gen-hep-notebooks"]
+	path = gen-hep-notebooks
+	url = ../../livaage/gen-hep-notebooks.git
+	branch = deploy
